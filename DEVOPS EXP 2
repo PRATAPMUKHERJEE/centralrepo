@@ -1,0 +1,96 @@
+Last login: Mon Aug 21 13:26:39 on ttys000
+pratapmukherjee@Prataps-MacBook-Air ~ % cd/Users/pratapmukherjee/Downloads/Devops
+zsh: no such file or directory: cd/Users/pratapmukherjee/Downloads/Devops
+pratapmukherjee@Prataps-MacBook-Air ~ % cd /Users/pratapmukherjee/Downloads/Devops
+pratapmukherjee@Prataps-MacBook-Air Devops % git init
+Reinitialized existing Git repository in /Users/pratapmukherjee/Downloads/Devops/.git/
+pratapmukherjee@Prataps-MacBook-Air Devops % vi info.txt
+pratapmukherjee@Prataps-MacBook-Air Devops % git add info.txt
+pratapmukherjee@Prataps-MacBook-Air Devops % git commit -m "COMMITED"
+[main 49b5dc4] COMMITED
+ Committer: Pratap Mukherjee <pratapmukherjee@Prataps-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+pratapmukherjee@Prataps-MacBook-Air Devops % git branch -M main
+pratapmukherjee@Prataps-MacBook-Air Devops % git remote add origin https://github.com/PRATAPMUKHERJEE/newrepo.git
+error: remote origin already exists.
+pratapmukherjee@Prataps-MacBook-Air Devops % cd /Users/pratapmukherjee/Downloads/devopspract
+pratapmukherjee@Prataps-MacBook-Air devopspract % git init           
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/pratapmukherjee/Downloads/devopspract/.git/
+pratapmukherjee@Prataps-MacBook-Air devopspract % vi info.txt        
+pratapmukherjee@Prataps-MacBook-Air devopspract % git add info.txt        
+pratapmukherjee@Prataps-MacBook-Air devopspract % git status        
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   info.txt
+
+pratapmukherjee@Prataps-MacBook-Air devopspract % git commit -m "COMMITED"
+[master (root-commit) 000f2c3] COMMITED
+ Committer: Pratap Mukherjee <pratapmukherjee@Prataps-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 info.txt
+pratapmukherjee@Prataps-MacBook-Air devopspract % git branch -M main
+pratapmukherjee@Prataps-MacBook-Air devopspract % git remote add origin https://github.com/PRATAPMUKHERJEE/newrepo.git
+pratapmukherjee@Prataps-MacBook-Air devopspract % git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 242 bytes | 242.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/PRATAPMUKHERJEE/newrepo.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+pratapmukherjee@Prataps-MacBook-Air devopspract % git branch
+* main
+pratapmukherjee@Prataps-MacBook-Air devopspract % git branch branch1
+pratapmukherjee@Prataps-MacBook-Air devopspract % git branch        
+  branch1
+* main
+pratapmukherjee@Prataps-MacBook-Air devopspract % git checkout branch1
+Switched to branch 'branch1'
+pratapmukherjee@Prataps-MacBook-Air devopspract % vi info.txt
+pratapmukherjee@Prataps-MacBook-Air devopspract % git commit -m "sucessul"
+On branch branch1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+pratapmukherjee@Prataps-MacBook-Air devopspract % 
